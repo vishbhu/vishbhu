@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    width:100%;
+    height:100vh;
+    background-image: url("uni.jpg");
+    background-size: cover;
+    background-position:center;
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    background:transparent;
+    position: relative;
+    top:20%;
+    left:30%;
+    
+}
+
+.form-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    width: 200px;
+    color:black;
+}
+
+.form-row input {
+    width: 200px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+
+button[type="submit"] {
+    background-color:red;
+    color: white;
+    position: relative;
+    left:35%;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+
+    
+    .logo{
+        width: 100px;
+        height:100px;
+        
+        position:relative;
+      
+        border: blue;
+        cursor: pointer; 
+        width: 80%;
+      
+
+    }
+    .vis{
+    width:20%;
+    height: 150px;
+    position:absolute;
+    right:70%;
+    top:50%;
+    background-image: url(vishstar.jpeg);
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px red;
+    animation:slider 15s infinite linear;
+}
+@keyframes slider{
+    5%{background-image: url(planck.png); }
+
+    35%{background-image: url(quote2.jpeg); }
+
+    75%{background-image: url(smv\ app.png); }
+
+}
+.footerdiv img{
+           width: 80px;
+           height: 80px;
+           position:relative;
+           top:50%;
+         
+}
+.footerdiv h3{
+    position:relative;
+    top:50%;
+    left:30%;
+}
+
+</style>
+</head>
+<body>
+    <div class="logo">
+        <img src="nnn.jpg" class="logo">
+    </div>
+    
+   
+
+<form>
+ <div class="form-row">
+    <label for="name">Student Name:</label>
+    <input type="text" id="name" name="name" required>
+ </div>
+ <div class="form-row">
+    <label for="college">College Name:</label>
+    <input type="text" id="college" name="college" required>
+ </div>
+ <div class="form-row">
+    <label for="course">Course:</label>
+    <input type="text" id="course" name="course" required>
+ </div>
+ <div class="form-row">
+    <label for="tuition">Tuition Fees:</label>
+    <input type="number" id="tuition" name="tuition" min="0" step="100" required>
+ </div>
+ <div class="form-row">
+    <label for="transportation">Transportation Fees:</label>
+    <input type="number" id="transportation" name="transportation" min="0" step="100" required>
+  </div>
+ <div class="form-row">
+    <label for="accommodation">Accommodation Fees:</label>
+    <input type="number" id="accommodation" name="accommodation" min="0" step="100" required>
+ </div>
+ <div class="form-row">
+    <label for="other">Other Fees:</label>
+    <input type="number" id="other" name="other" min="0" step="100" required>
+ </div>
+ <div class="form-row">
+    <label for="total">Total Fees:</label>
+    <input type="number" id="total" name="total" min="0" step="100" required>
+ </div>
+ <button type="submit">Submit</button>
+ 
+</form>
+<div class="vis"></div>
+<footer>
+    <div class="footerdiv">
+     <h3>CONTACT US : 080-983344710 </h3>
+     <h3>Email ID:smvdegreecollege@gmail.com  </h3>
+     <img src="qr-code.png"></img>
+</footer>
+
+</footer>
+</body>
+</html>
